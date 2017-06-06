@@ -3,12 +3,13 @@
   <head>
     <title>Site</title>
     <%= csrf_meta_tags %>
-
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
+  <body style="background-image: url('/assets/dark.png');  font-family: 'Droid Sans Mono';">
+
+
   <%= render 'home/header'	%>
    <div class="container" <%= yield %></div>
   </body>
