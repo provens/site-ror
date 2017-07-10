@@ -16,4 +16,5 @@
     }
   }
 }
-@include linx(#F47442, #F47442, #38C0FF, #F47442);
+      //          $link, $visit, $hover, $active
+@include linx($tertiary-color!important, $tertiary-color!important,$secondary-color!important, $tertiary-color!important);

@@ -1,14 +1,7 @@
-<h1>Hello, Rails!</h1>
-<br>
-<%= link_to 'My Blog', controller: 'articles' %>
-<%= link_to "Home Page", root_path(@root)%>
-<%= link_to "Add Article", new_article_path(@articles)%>
-
 <div id="cal-div" class="container text-justify">
 
 <%= month_calendar do |date|  %>
-  <%= date.day %>
+  <%= date.day %><% end %>
 
-<% end %>
 </div>
 
