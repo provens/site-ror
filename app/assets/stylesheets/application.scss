@@ -1,6 +1,8 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import url('https://fonts.googleapis.com/css?family=Oswald&subset=latin-ext');
+@import "nav";
+@import "simple-calendar";
 
 body{
 	background-image: url('/assets/dark.png');
