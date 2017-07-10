@@ -1,6 +1,6 @@
 $primary-color: #38C0FF; //blue
-$secondary-color: #ededed;
-$tertiary-color: #F47442;
+$secondary-color: #ededed; //grey
+$tertiary-color: #F47442; //orange
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import url('https://fonts.googleapis.com/css?family=Oswald&subset=latin-ext');
@@ -20,14 +20,7 @@ h1{
 	letter-spacing: 0.2em;
 	text-shadow: 2px 2px grey;
 }
+//					$link, $visit, $hover, $active
+@import "link-colors";
 
-a {
-	color: $tertiary-color;
-	padding: 5px 5px 5px 5px;
-	transition: all 0.5s ease-in-out;
-	&:after {
-	 :hover & {
-	
-		}
-	}
-}
+

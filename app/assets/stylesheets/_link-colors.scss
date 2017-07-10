@@ -1,0 +1,19 @@
+@mixin linx ($link, $visit, $hover, $active) {
+  a {transition: all 0.5s ease-in-out;
+
+    color: $link;
+    &:visited {
+      color: $visit;
+      text-decoration: none;
+    }
+    &:hover {
+      color: $hover;
+      text-decoration: none;   
+    }
+    &:active {
+      color: $active;
+      text-decoration: none;
+    }
+  }
+}
+@include linx(#F47442, #F47442, #38C0FF, #F47442);

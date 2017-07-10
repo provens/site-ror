@@ -1,5 +1,6 @@
 .simple-calendar {
   margin: 0 auto;
+  margin-top: 1em;
   width: 450px;
   padding: 1em 1em 0.5em 1em;
   font-size: 26px;
@@ -38,6 +39,11 @@ color:$primary-color;
 
 #cal-div{
   
+}
+#centerofmass{
+  text-align: center;
+  margin: 0 auto;
+  padding: 0 0 0 0;
 }
 th{
   text-align: center;
