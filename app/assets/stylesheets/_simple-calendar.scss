@@ -1,35 +1,53 @@
 .simple-calendar {
-  
+  padding: 1em 1em 0 1em;
+  font-size: 18px;
   color: #ededed;
-  border: solid 0.5em white;
+  border: solid 1px;
   border-radius: 2em;
+  font-family: 'Lobster Two','Verdana', cursive;
+  font
+  
   .day {}
 
-  .wday-0 {}
-  .wday-1 {}
-  .wday-2 {}
-  .wday-3 {}
-  .wday-4 {}
-  .wday-5 {}
-  .wday-6 {}
+  
+  .wday-0 {
+  font-size: 18px;
+  font-weight: 600;}
+  
+  .wday-1 {@extend .wday-0}
+  .wday-2 {@extend .wday-0}
+  .wday-3 {@extend .wday-0}
+  .wday-4 {@extend .wday-0}
+  .wday-5 {@extend .wday-0}
+  .wday-6 {@extend .wday-0}
 
   .today {
-  background-color: #f47442;
+  background-color: #38C0FF;
   }
   .past {}
   .future {}
 
   .start-date {}
 
-  .prev-month {}
-  .next-month { }
+  .prev-month {color: #404040;}
+  .next-month {@extend .prev-month}
   .current-month {}
 
   .has-events {}
 
+.thead-color
+{
+color:#38c0ff;
+}
 
 #cal-div{
   
+}
+th{
+  text-align: center;
+}
+td{
+  border-radius: 50%;
 }
 
 }
