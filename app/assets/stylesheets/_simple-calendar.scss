@@ -1,28 +1,23 @@
 .simple-calendar {
-  padding: 1em 1em 0 1em;
-  font-size: 18px;
-  color: #ededed;
+  margin: 0 auto;
+  width: 450px;
+  padding: 1em 1em 0.5em 1em;
+  font-size: 26px;
+  color: $secondary-color;
   border: solid 1px;
   border-radius: 2em;
-  font-family: 'Lobster Two','Verdana', cursive;
-  font
-  
+    
   .day {}
 
   
-  .wday-0 {
+  .wday-0, .wday-1, .wday-2, .wday-3, .wday-4, .wday-5, .wday-6 {
   font-size: 18px;
-  font-weight: 600;}
+  font-weight: 600;
   
-  .wday-1 {@extend .wday-0}
-  .wday-2 {@extend .wday-0}
-  .wday-3 {@extend .wday-0}
-  .wday-4 {@extend .wday-0}
-  .wday-5 {@extend .wday-0}
-  .wday-6 {@extend .wday-0}
-
+}
+  
   .today {
-  background-color: #38C0FF;
+  background-color: $primary-color;
   }
   .past {}
   .future {}
@@ -37,7 +32,8 @@
 
 .thead-color
 {
-color:#38c0ff;
+font-family: 'Lobster Two','Verdana', cursive;
+color:$primary-color;
 }
 
 #cal-div{
@@ -49,5 +45,24 @@ th{
 td{
   border-radius: 50%;
 }
+}
 
+// Variable
+$primary-color: hotpink;
+
+// Mixin
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    border-radius: $radius;
+}
+
+.my-element {
+    color: $primary-color;
+    width: 100%;
+    overflow: hidden;
+}
+
+.my-other-element {
+    @include border-radius(5px);
 }

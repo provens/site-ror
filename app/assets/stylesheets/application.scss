@@ -1,3 +1,6 @@
+$primary-color: #38C0FF; //blue
+$secondary-color: #ededed;
+$tertiary-color: #F47442;
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import url('https://fonts.googleapis.com/css?family=Oswald&subset=latin-ext');
@@ -12,9 +15,19 @@ body{
 }
 
 h1{
-color: white; 
-font-size: 70px;
-letter-spacing: 0.2em;
-text-shadow: 2px 2px grey;
+	color: white; 
+	font-size: 70px;
+	letter-spacing: 0.2em;
+	text-shadow: 2px 2px grey;
 }
 
+a {
+	color: $tertiary-color;
+	padding: 5px 5px 5px 5px;
+	transition: all 0.5s ease-in-out;
+	&:after {
+	 :hover & {
+	
+		}
+	}
+}
