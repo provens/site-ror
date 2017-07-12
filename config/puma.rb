@@ -18,5 +18,5 @@ environment ENV['RACK_ENV'] || 'development'
 on_worker_boot do
 	ActiveRecord::Base.establish_connection
 end
-Rack::Timeout.timeout = 20  # seconds
+
 plugin :tmp_restart
