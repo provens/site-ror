@@ -1,3 +1,8 @@
+@mixin mediaq($size){
+@media only screen and (max-width: 768px) {
+  font-size: $size;
+}}
+
 .simple-calendar {
   margin: 0 auto;
   margin-top: 1em;
@@ -7,23 +12,31 @@
   color: $secondary-color;
   border: solid 1px;
   border-radius: 2em;
-
+  @include mediaq(16px);
+  @media only screen and (max-width: 768px) {
+  width: 100%;
+}
   .day {}
 
   
   .wday-0, .wday-1, .wday-2, .wday-3, .wday-4, .wday-5, .wday-6 {
     font-size: 18px;
     font-weight: 600;
+    @include mediaq(12px);
   }
-
+  .calendar-title{
+    font-size:30px;
+    font-family: 'Pirata One','Verdana', sans-serif;
+  }
   .calendar-nav{
     font-weight: 600;
     padding: 0 20px 0 20px;
-    text-shadow: 2px 2px $primary-color;
+    text-shadow: 2px 2px #BF9D37;
  
   }
   .today {
     background-color: $primary-color;
+    color: $tertiary-color;
   }
   .past {}
   .future {}
