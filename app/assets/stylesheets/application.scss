@@ -1,7 +1,7 @@
 $primary-color: #38C0FF; //blue
-$secondary-color: #305463;
-//#ededed; //grey
-$tertiary-color: #32CD32; //orange
+$secondary-color: #ededed; //grey
+$tertiary-color: #1C1818;
+// #32CD32; orange
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import url('https://fonts.googleapis.com/css?family=Oswald&subset=latin-ext');
@@ -9,7 +9,11 @@ $tertiary-color: #32CD32; //orange
 @import "link-colors";
 @import "nav";
 @import "simple-calendar";
-img { max-height:95vh; }
+
+img { 
+	max-height:95vh; 
+}
+
 body{
 	font-size: 16px;
 	background-image: url('dark.png');
@@ -18,10 +22,10 @@ body{
 }
 
 h1{
-	color: white; 
+	color: $primary-color; 
+	text-shadow: 3px 0px #1B8DC1;
 	font-size: 70px;
 	letter-spacing: 0.2em;
-	text-shadow: 2px 2px grey;
 }
 
 

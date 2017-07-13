@@ -7,18 +7,23 @@
   color: $secondary-color;
   border: solid 1px;
   border-radius: 2em;
-    
+
   .day {}
 
   
   .wday-0, .wday-1, .wday-2, .wday-3, .wday-4, .wday-5, .wday-6 {
-  font-size: 18px;
-  font-weight: 600;
-  
-}
-  
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  .calendar-nav{
+    font-weight: 600;
+    padding: 0 20px 0 20px;
+    text-shadow: 2px 2px $primary-color;
+ 
+  }
   .today {
-  background-color: $primary-color;
+    background-color: $primary-color;
   }
   .past {}
   .future {}
@@ -31,44 +36,24 @@
 
   .has-events {}
 
-.thead-color
-{
-font-family: 'Lobster Two','Verdana', cursive;
-color:$primary-color;
-}
+  .thead-color
+  {
+    font-family: 'Lobster Two','Verdana', cursive;
+    color:$primary-color;
+  }
 
-#cal-div{
-  
-}
-#centerofmass{
-  text-align: center;
-  margin: 0 auto;
-  padding: 0 0 0 0;
-}
-th{
-  text-align: center;
-}
-td{
-  border-radius: 50%;
-}
-}
+  #cal-div{
 
-// Variable
-$primary-color: hotpink;
-
-// Mixin
-@mixin border-radius($radius) {
-    -webkit-border-radius: $radius;
-    -moz-border-radius: $radius;
-    border-radius: $radius;
-}
-
-.my-element {
-    color: $primary-color;
-    width: 100%;
-    overflow: hidden;
-}
-
-.my-other-element {
-    @include border-radius(5px);
+  }
+  #centerofmass{
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 0 0 0;
+  }
+  th{
+    text-align: center;
+  }
+  td{
+    border-radius: 50%;
+  }
 }
