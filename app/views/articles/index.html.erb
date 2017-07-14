@@ -1,7 +1,9 @@
-<h1>Listing articles</h1>
+<%= content_for(:title, "Guest Book")%>
+<h1><%= yield(:title) %></h1>
 
 <%= link_to "Add Article", new_article_path(@articles)%>
 
 <%= render 'article_table' %>
+
 
 <%= link_to "Home Page", root_path(@root)%>

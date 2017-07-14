@@ -16,13 +16,13 @@
 
     <!-- Collect the nav links, forms, and other content for toggling-->
     <div class="collapse navbar-collapse navbar-text" id="collapse-1">
-      <ul class="nav navbar-nav ">
+      <ul class="nav navbar-nav">
         <li><%= link_to "Home Page", root_path(@root)%></li>
-        <li><%= link_to 'My Blog', controller: 'articles' %></li>
-        <li><%= link_to "Add Article", new_article_path(@articles)%></li>
+        <li><%= link_to 'Guest Book', controller: 'articles' %></li>
+        <li class="col-md-push-12"><%= link_to "Add entry to the guest book", new_article_path(@articles)%></li>
       </ul> 
-
-     </div><!-- /.navbar-collapse -->
+      
+    </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
 <!--/.Navbar-->

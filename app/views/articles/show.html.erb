@@ -1,5 +1,8 @@
+<%= content_for(:title, @article.title)%>
+<h1><%= yield(:title) %></h1>
+
 <p>
-	<strong>Title:</strong>
+	<strong>Name:</strong>
 	<%= @article.title %>
 </p>
 
@@ -11,11 +14,15 @@
 <%= render @article.comments %>
 
 <h2>Add a comment:</h2>
+
   
 <%= render 'comments/form' %>
 <br>
- 
+
 
 <%= link_to "Home Page", root_path(@root), :class => "btn-info btn-lg"%><br><br><br>
-<%= link_to 'Edit', edit_article_path(@article) %> |
+<%= link_to 'Edit', edit_article_path(@article) %> 
+<%= link_to ' Destroy', article_path(@article),
+      method: :delete,
+      data: { confirm: 'Are you sure?' } %>|
 <%= link_to 'Back', articles_path %>

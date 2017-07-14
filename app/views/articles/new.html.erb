@@ -1,7 +1,9 @@
-<h1>New article</h1>
+<%= content_for(:title, "New entry")%>
+<h1><%= yield(:title) %></h1>
+
  
 <%= render 'form' %>
  
-<%= link_to 'Back', articles_path %>
+<%= link_to 'Back to guest book', articles_path %>
 
 <%= link_to "Home Page", root_path(@root)%>
